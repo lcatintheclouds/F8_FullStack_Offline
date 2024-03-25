@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML FORM</h1>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post"> 
+        <!--Post dùng dể gửi dữ liệu lên server, còn Get để lấy dữ liệu về (thường dùng cho tìm kiếm)-->
+        <!--Trường nhập liệu (field)-->
+        <!-- <div>
+            <label for="name">Họ tên</label>
+            <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                placeholder="Họ và tên..."
+                value="" 
+                readonly
+            />
+        </div>
+        <div>
+            <label for="name">Họ tên</label>
+            <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                placeholder="Họ và tên..."
+                value="" 
+                disabled
+            />
+        </div>
+        <div>
+            <label for="name">Họ tên</label>
+            <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                placeholder="Họ và tên..."
+                value="" 
+                required
+            />
+        </div> -->
+        <div>
+            <label for="name">Họ tên</label>
+            <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                placeholder="Họ và tên..."
+                maxlength="5"
+            />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email..." />
+        </div>
+        <div>
+            <label for="password">Mật Khẩu</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Mật khẩu..."
+            />
+        </div>
+        <div>
+            <label for="age">Tuổi</label>
+            <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Tuổi..."
+                min="18"
+                max="50"
+                step="0.1"
+            />
+        </div>
+        <div>
+            <label for="birthday">Ngày sinh</label>
+            <input
+                type="date"
+                id="birthday"
+                name="birthday"
+            />
+        </div>
+        <div>
+            <label for="avatar">Avatar</label>
+            <input
+                type="file"
+                id="avatar"
+                name="avatar"
+                hidden
+            />
+        </div>
+        <div>
+            <label for="price">Giá</label>
+            <input
+                type="range"
+                id="price"
+                name="price"
+                value="0"
+                step="0.1"
+            />
+        </div>
+        <div>
+            <label>Giới tính</label>
+            <label>
+                <input type="radio" name="gender" value="0" checked /> Không xác định
+            </label>
+            <label>
+                <input type="radio" name="gender" value="1" /> Nam
+            </label>
+            <label>
+                <input type="radio" name="gender" value="02" /> Nữ
+            </label>
+                <!--khi có for thì bắt buộc phải có thuộc tính id-->
+        </div>
+        <div>
+            <label>Bạn biết đến f8 qua đâu?</label>
+            <label>
+                <input type="checkbox" name="source[]" value="youtube" /> Youtube
+            </label>
+            <label>
+                <input type="checkbox" name="source[]" value="facebook" /> Facebook
+            </label>
+            <label>
+                <input type="checkbox" name="source[]" value="Website" /> Website
+            </label>
+        </div>
+        <!-- <div>
+            <label for="provinces">Tỉnh/Thành phố</label>
+            <select name="provinces" id="provinces" multiple>
+                <option value="0">Chọn Tỉnh/TP</option>
+                <option value="1">Hà Nội</option>
+                <option value="2" selected>Nam Định</option>
+                <option value="3">Hồ Chí Minh</option>
+            </select>
+        </div> -->
+        <div>
+            <label for="message">Tin nhắn</label>
+            <input type="hidden"
+            <textarea 
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Tin nhắn..."
+            style="resize: none;"
+            ></textarea>
+        </div>
+        <!-- Nút gửi dữ liệu (submit) -->
+        <button type="submit">Submit</button>
+        <button type="button">Button</button>
+        <button type="reset">Reset</button>
+        <button type="menu">Menu</button>
+    </form>
+</body>
+</html>

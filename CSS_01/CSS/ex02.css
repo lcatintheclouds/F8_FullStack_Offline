@@ -1,0 +1,34 @@
+/* Selector CSS */
+/* #title {
+    color: red;
+} */
+/*id thì dấu # còn class thì dấu . */
+/* .title {
+    color: green;
+} */
+/* tên thẻ thì k cần dấu (nếu có thuộc tính id trong thẻ thì sẽ ưu tiên thuộc tính)*/
+/* h3 {
+    color: blue;
+} */
+/* .box .title {
+    color: red;
+}
+.content .title {
+    color: gold;
+} */
+/* .box > .title {
+    color: red;
+}
+.content > div > div > .title {
+    color: aqua;
+} */
+h1.title.title-large {
+    color: bisque;
+}
+h1.title {
+    color: red;
+}
+/* h2.title {
+    color: gold;
+} */
+/* chọn càng chi tiết --> độ ưu tiên càng cao */

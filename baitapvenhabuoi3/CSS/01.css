@@ -1,0 +1,27 @@
+img {
+    width: 2%;
+}
+.mid {
+    
+    display: flex;
+}
+#input {
+    padding: 8px 0px;
+    margin-top: 1%;
+}
+input {
+    width: 70%;
+    height: 30px;
+    padding-left: 5px;
+  }
+textarea {
+    width: 70%;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+button {
+    margin-top: 1%;
+    width: 120px;
+    height: 35px;
+    border: 0px;
+  }

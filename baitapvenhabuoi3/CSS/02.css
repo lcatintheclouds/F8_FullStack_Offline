@@ -1,0 +1,12 @@
+img {
+    width: 10%;
+}
+.feedback-list1 {
+    display: flex;
+}
+.feedback-list2 {
+    display: flex;
+}
+h2 {
+    text-align: center;
+}

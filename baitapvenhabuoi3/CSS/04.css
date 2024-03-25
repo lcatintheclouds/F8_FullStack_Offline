@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    background: #b1b1b1;
+ }
+ #post {
+    background: #b1b1b1;
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding: center;
+    text-align: center;
+ }
+ #sidebar {
+    background: #b1b1b1;
+    float: right;
+   }
+   #UAE{
+    background-color: burlywood;
+   }
+   #button {
+      border-color: brown;
+   }
