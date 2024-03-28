@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 .totallist {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;             /* dùng để bọc .content trong .totallist k bị lệch khi điều chỉnh kích thước trình duyệt */
     width: 100%;
     justify-content: center;        /* dùng để điều chỉnh .content nằm ở giữa */
@@ -102,8 +102,8 @@ li {
     background: #ff9f43;
 }
 .option {
-    display: flex;
     justify-content: center;
+    border: 0;
 }
 h2 {
     color: #0b0b0b;
@@ -124,4 +124,44 @@ h2 {
     background-color: #29388E;
     color: white;
 }
-
+.btn-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.btn-list label {
+    margin: 0 5px 10px 5px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    padding: 10px 35px;
+  }
+input {
+    display: none;
+}
+.skincare-list,
+.haircare-list,
+.cosmetics-list,
+.fragrance-list,
+.makeup-list {
+    display: none;
+    justify-content: center;
+}
+input#skincare:checked ~ .btn-list > label[for="skincare"],
+input#haircare:checked ~ .btn-list > label[for="haircare"],
+input#cosmetics:checked ~ .btn-list > label[for="cosmetics"],
+input#fragrance:checked ~ .btn-list > label[for="fragrance"],
+input#makeup:checked ~ .btn-list > label[for="makeup"] {
+  background-color: #28368c;
+  color: white;
+}
+input#skincare:checked ~ div div.skincare-list,
+input#haircare:checked ~ div div.haircare-list,
+input#cosmetics:checked ~ div div.cosmetics-list,
+input#fragrance:checked ~ div div.fragrance-list,
+input#makeup:checked ~ div div.makeup-list {
+  display: flex;
+}
