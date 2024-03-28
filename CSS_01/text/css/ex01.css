@@ -1,0 +1,21 @@
+/*
+thuộc tính color: thay đổi màu văn bản
+Cú pháp: color: value
+- Mã màu: hexa, rgb, hsl
+- tên màu
+ thuộc tính color là 1 thuộc tính kế thừa
+*/
+h1 {
+    color: rgb(128,162,49);
+}
+/* h2 {
+    color: transparent;
+}
+h2::selection {
+    background-color: black;
+    color: white;
+} */
+.box h2:hover{
+    color: inherit;
+    border:  ;
+}

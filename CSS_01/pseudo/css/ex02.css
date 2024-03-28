@@ -1,0 +1,70 @@
+/*
+Cú pháp: selector:name
+- active
+- hover
+- focus
+- disable
+- checked
+- not
+- first-child
+- first-of-type
+- nth-child
+- nth-of-type
+
+active, hover --> có ở tất cả các thẻ html
+focus --> chỉ có ở form
+
+Ngoại lệ: tất cả các thẻ html có thể có focus nếu thêm thuộc tính tabindex
+dùng tabindex có thể thay đổi thứ tự của tab
+*/
+.btn:hover {
+    color: red;
+}
+.btn:focus {
+    color: blue;
+}
+.btn:active {
+    color: blueviolet;
+}
+input:focus::placeholder {
+    color: aqua;
+}
+h1:focus {
+    color: green;
+}
+.btn:disabled:hover {
+    color: green;
+}
+input:read-only:focus::placeholder {
+    color: green;
+}
+/* .checkboxs input:checked + span {
+    color: red;
+}
+.lists li:not(.hide):not(.hiden) {
+    color: red;
+} */
+/* .lists li:first-child {
+    color: red;
+}
+.lists li:last-child {
+    color: green;
+} */
+/* .lists li:first-of-type {
+    color: red;
+}
+.lists li:last-of-type {
+    color: green;
+} */
+/* .lists li:nth-child(2n + 1) {
+    color: red;
+} */
+/* .lists li:nth-of-type(1) {
+    color: red;
+} */
+/* input {
+    display: none;
+} */
+.ticket input:checked + p {
+    color: red;
+}

@@ -1,0 +1,42 @@
+/* Attribute Selector
+1. tag[attribute] */
+
+/* ul li a[target] {
+    color: red;
+}
+
+2. tag[attribute="value"] */
+
+/* ul li a[href="https://fullstack.edu.vn"] {
+    color: red;
+}
+
+3. tag[attribute^="value"] : chọn thuộc tính có giá trị bắt đầu bằng value */
+
+/* ul li a[href^="https://fullstack.edu.vn"] {
+    color: red;
+}
+
+4. tag[attribute*="value"] : Chọn thuộc tính có giá trị chứa value */
+
+/* ul li a[href*="fullstack.edu.vn"] {
+    color: red;
+}
+
+5. tag[attribute$="value"] : Chọn thuộc tính có giá trị kết thúc là value */
+
+/* 
+ul li a[href$=".vn"] {
+    color: red;
+}
+lưu ý class, id hoàn toàn có thể áp dụng như attribute Selector
+
+6. tag[attribute~="value"] : Chọn thuộc tính có giá trị là 1 từ */
+
+/* ul li a[title~="hello"] {
+    color: red;
+} */
+
+.row [class^="col-"] {
+    color: gold;
+}

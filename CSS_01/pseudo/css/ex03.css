@@ -1,0 +1,12 @@
+.box #red:checked ~ p {
+    color: red;
+}
+.box #green:checked ~ p {
+    color: green;
+}
+.box #blue:checked ~ p {
+    color: blue;
+}
+input {
+    display: none;
+}
