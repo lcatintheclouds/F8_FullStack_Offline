@@ -25,9 +25,10 @@ h2 {
     background-color: rgb(176,51,43);
     color: white;
     font-family: "Alfa Slab One", serif;
-    width: 306px;
+    width: 308px;
     height: 55px;
     border-radius: 4px;
+    margin-left: 2px;
 }
 input {
     font-family: "Bebas Neue", sans-serif;
@@ -36,8 +37,8 @@ input {
     font-size: 20px;
     margin: 2px;
 }
-.form-1 {
-    border-radius: 10px;
+.form-1 { 
+    justify-content: center;
 }
 section {
     text-align: center;
