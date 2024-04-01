@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 .totallist {
-    /* display: flex; */
+    display: flex;
     flex-wrap: wrap;             /* dùng để bọc .content trong .totallist k bị lệch khi điều chỉnh kích thước trình duyệt */
     width: 100%;
     justify-content: center;        /* dùng để điều chỉnh .content nằm ở giữa */

@@ -1,0 +1,30 @@
+/* 
+thuộc tính text-decoration: tạo line cho văn bản
++ none
++ underline   dưới
++ overline      trên        
++ line-through      giữa
+
+thuộc tính text-transform: chữ hoa, chữ thường
++ none 
++ uppercase chữ hoa 
++ lowercase chữ thường
++ captitalize viết hoa chữ cái đầu 
+
+thuộc tính letter-spacing : khoảng cách giữa các chữ
+
+thuộc tính word-spacing: khoảng cách giữa các từ
+*/
+body {
+    /* text-decoration: underline overline line-through; */
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    word-break: break-all;
+}
+h2 {
+    word-break: break-all;
+}
+.link {
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+/* 
+Thay đổi font chữ font-family: tên font1 tên font2, ...
+
+font chữ có 2 loại:
+- Font mặc định trên máy tính
+- Font nạp từ bên ngoài
+
+Lưu ý: nếu font chữ có khoảng trắng   ---> thêm dấu nháy (")
+
+sans-serif: Họ font không chân
+serif: họ font có chân
+monospace: Họ font mono
+
+trong 1 font chữ có 2 yếu tố quy định kiểu
+- Độ dày  100 --> 900 (bội số của 100)
+- Nghiêng hay không
+
+*/
+/* @import url(./fonts.css); */
+@font-face {
+    font-family: "FFFF Font";
+    src: url(../fonts/Lato-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FFFF Font";
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FFFF Font";
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FFFF Font";
+    src: url(../fonts/Lato-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "FFFF Font";
+    src: url(../fonts/Lato-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FFFF Font";
+    src: url(../fonts/Lato-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+body {
+    /* font-family: 'FFFF Font', Times, serif;
+    font-weight: 300;
+    font-style: italic; */
+    font-family: "Yarndings 20", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}

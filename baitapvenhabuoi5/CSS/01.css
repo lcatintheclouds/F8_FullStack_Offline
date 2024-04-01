@@ -1,0 +1,28 @@
+* {
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: blueviolet;
+    background-attachment: fixed;
+}
+div.container {
+    background-image: url(./fonts/maxresdefault.jpg);
+    height: 700px;
+    width: 1500px;
+    background-repeat: no-repeat;
+}
+div.content {
+    /* background-color: bisque; */
+    width: 430px;
+    height: 250px;                        
+    text-align: center;             
+    background-color: lightgrey;
+    opacity: 0.5;
+    transform: translate(-56%, -75%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    /* transform: translate(0%, 1%); */
+}
