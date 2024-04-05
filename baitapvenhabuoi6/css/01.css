@@ -1,0 +1,85 @@
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }  
+@font-face {
+    font-family: "Lobster";
+    src: url(../fonts/Lobster-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+h2 {
+    font-family: "Lobster", sans-serif;
+}
+span {
+    color: rgb(238,97,87);
+}
+#copy-checkbox {
+    accent-color: black;
+}
+input {
+    margin: 20px;
+    margin-left: 0;
+}
+.hidden-name {
+    display: none;
+}
+.infor-name-submit1:focus ~ .hidden-name {
+    display: block;
+    transform: translate(-100%, -1%);
+}

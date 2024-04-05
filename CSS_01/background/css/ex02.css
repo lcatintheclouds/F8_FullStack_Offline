@@ -1,0 +1,18 @@
+/* 
+Thuộc tính background-attachment: scroll | fixed
+
+Thuộc tính background: color image position / size repeat attachment 
+*/
+body {
+    height: 2000px;
+}
+.banner {
+    /* height: 400px;
+    background-color: #ff0000;
+    background-image: url(https://fastly.picsum.photos/id/839/400/800.jpg?hmac=Vz3n_tzB6RlddukmfJBJJejjyMa8Eqihe_FLf1EsIso);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed; */
+    height: 400px;
+    background: red url(https://fastly.picsum.photos/id/839/400/800.jpg?hmac=Vz3n_tzB6RlddukmfJBJJejjyMa8Eqihe_FLf1EsIso) no-repeat fixed 0 0 / cover;
+}

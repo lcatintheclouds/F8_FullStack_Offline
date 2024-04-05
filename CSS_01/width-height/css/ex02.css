@@ -1,0 +1,18 @@
+.box {
+    width: 0px;
+    /* border: 1px solid red; */
+    max-width: 300px;
+    background: yellow;
+    min-width: 150px;
+}
+.image {
+    width: 300px;
+    border: 1px solid red;
+}
+.image img {
+    max-width: 300px;
+}
+.content {
+    max-width: 1000px;
+    background: yellow;
+}
