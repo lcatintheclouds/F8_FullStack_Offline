@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lê Công Anh Tú</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -11,43 +11,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <form action="" method="post">
+    <section>
         <h2>Hey there</h2>
         <p><span>We'd like to hear from you.</span> Send us your message or just say hy with our contact form or directly via phone, we love to chat.</p>
-        <div class="infor-submit">
-            <div class="infor-name-submit">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Your name " class="infor-name-submit1">
-                <div class="hidden-name">
-                    Enter your name
-                </div>
+        <form class="contact-form">
+            <label>
+                    <p class="hidden-tittle">Enter your name</p>
+                    <i class="fa-solid fa-user" id="icon-left"></i>
+                    <input type="text" placeholder="Your name" class="infor-name-submit1">
+                    <div class="icon-right hidden-right">
+                        <i class="fa-sharp fa-solid fa-star" id="star"></i>
+                        <i class="fa-solid fa-xmark" id="xmark"></i>
+                    </div>
+            </label>
+            <label>
+                    <p class="hidden-tittle">Enter your email</p>
+                    <i class="fa-solid fa-envelope" id="icon-left"></i>
+                    <input type="email" placeholder="your@domain.com">
+                    <div class="icon-right hidden-right">
+                        <i class="fa-sharp fa-solid fa-star" id="star"></i>
+                        <i class="fa-solid fa-xmark" id="xmark"></i>
+                    </div>
+            </label>
+            <label>
+                    <p class="hidden-tittle">Enter your tel</p>
+                    <i class="fa-solid fa-mobile-screen-button" id="icon-left"></i>
+                    <input type="tel" placeholder="+44 00 123">
+                    <!-- <div class="icon-right hidden-right">
+                        <i class="fa-sharp fa-solid fa-star" id="star"></i>
+                        <i class="fa-solid fa-xmark" id="xmark"></i>
+                    </div> -->
+            </label>
+            <label>
+                    <p class="hidden-tittle">Enter your subject</p>
+                    <i class="fa-solid fa-book" id="icon-left"></i>
+                    <select class="subject1">
+                        <option value="0" selected>Subject</option>
+                        <option value="0" >Subject2</option>
+                    </select>
+                    <!-- <div class="icon-right hidden-right">
+                        <i class="fa-sharp fa-solid fa-star" id="star"></i>
+                        <i class="fa-solid fa-xmark" id="xmark"></i>
+                    </div> -->
+            </label>
+            <label>
+                    <p class="hidden-tittle">Enter your message</p>
+                    <i class="fa-solid fa-message" id="icon-left"></i>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <div class="icon-right hidden-right">
+                        <i class="fa-sharp fa-solid fa-star" id="star"></i>
+                        <i class="fa-solid fa-xmark" id="xmark"></i>
+                    </div>
+            </label>
+            <div>
+                <label>
+                    <input type="checkbox" name="copy" id="copy-checkbox">
+                    <span >Send me a copy of this message</span>
+                </label>
+                <button type="submit" class="btn-send">SEND</button>
             </div>
-            <div class="infor-mail-submit">
-                <i class="fa-solid fa-envelope"></i>
-                <input type="email" placeholder="your@domain.com">
-            </div>
-            <div class="infor-tel-submit">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <input type="tel" placeholder="+44 00 123">
-            </div>
-            <div class="infor-subject-submit">
-                <i class="fa-solid fa-book"></i>
-                <select id="subject-selection">
-                    <option value="0" selected>Subject</option>
-                    <option value="0" >Subject2</option>
-                </select>
-            </div>
-            <div class="infor-message-submit">
-                <i class="fa-solid fa-message"></i>
-                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
-            </div>
-            <div class="btn-send">
-                <input type="checkbox" name="copy" id="copy-checkbox">
-                <label for="copy-checkbox">Send me a copy of this message</label>
-                <button type="submit">Send</button>
-            </div>
-            
-        </div>
-    </form>
+        </form>
+    </section>
 </body>
 </html>
