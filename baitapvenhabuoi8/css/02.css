@@ -1,0 +1,104 @@
+.asap-asap1 {
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:'wdth' 100;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Asap", sans-serif;
+  }
+.hd-company {
+  width: 100%;
+  height: 400px;
+    background: #bf4240 url(../../CSS_01/image/08/banner2.jpg) no-repeat;
+    background-size: 1600px 400px;
+    color: white;
+    display: block;
+    position: relative;
+}
+/* .hd-company::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+.hd-company .hd-content {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+/* .hd-company .hd-content .logo-company {
+  bottom: 0;
+} */
+
+.hd-company .hd-content .logo-company img {
+  background-color: white;
+  /* border: 1px solid transparent; */
+  border-radius: 3px;
+  /* float: left; */
+}
+.hd-company .hd-content .tittle-company {
+  padding: 20px;
+  /* display: flex;
+  position: absolute;
+  left: 300px;
+  bottom: 20px */
+  
+}
+.hd-company .hd-content .tittle-company h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.hd-company .hd-content .tittle-company p {
+  float: left;
+  padding: 10px 30px 10px 0px;
+  margin: 10px 10px 10px 0px;
+}
+.hd-company .hd-content .tittle-company span {
+  font-weight: 500;
+  font-size: 24px;
+}
+.au-content {
+  padding: 0 64px;
+  list-style: none;
+  display: flex;
+  float: right;
+}
+
+.au-content .items {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.au-content .items a {
+  color: #3f3424;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.au-content .items:first-child a,
+.au-content .items:hover a {
+  color: #bf4240;
+}
+
+.au-content .items:first-child a::after,
+.au-content .items:hover a::after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 40px);
+  height: 4px;
+  background: #bf4240;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 2px;
+}
