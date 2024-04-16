@@ -1,0 +1,27 @@
+/* 
+thuộc tính transition: thiết lập thời gian và tốc độ cho quá trình chuyển động css ( chỉ áp dụng với những thuộc tính có giá trị là số)
+
+- transition-property: tenthuoctinh
+- transition-duration: thoigian (s, ms)
+- transition-delay: thoigian (s, ms)
+- transition-timing-function: --> thiết lập tốc độ khi di chuyển
++ ease --> Mặc định, chậm - nhanh - chậm
++ ease-in --> chậm - nhanh
++ ease-out --> nhanh - chậm
++ ease-in-out --> chậm - nhanh - chậm 
++ linear --> chuyển động đều
++ cubic-bezier(p1, p2, p3, p4)
+*/
+.box {
+    border: 1px solid red;
+    padding: 20px;
+}
+.box h2 {
+    transition-property: padding-left;
+    transition-duration: 1s;
+    transition-delay: 0 ;
+    /* transition-timing-function: ; */
+}
+.box:hover h2 {
+    padding-left: 50px;
+}

@@ -1,0 +1,139 @@
+.space-grotesk-sg {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.inter-it{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #747478;
+}
+.container .box-left {
+    display: block;
+    font-family: "Inter", sans-serif;
+    width: 50%;
+    overflow: hidden;
+}
+.container .box-left .attention-content {
+    display: flex;
+    padding: 20px;
+}
+.box-left .attention-content .left-site {
+    text-align: right;
+    width: 50%;
+}
+.box-left .attention-content .left-site h2 {
+    font-family: "Space Grotesk", sans-serif;
+    color: black;
+}
+.box-left .attention-content .left-site p {
+    padding: 15px 10px;
+}
+.box-left .attention-content .left-site a {
+     background: #F3F3F3;
+     padding: 7px 20px;
+     border-radius: 99px;
+     text-decoration: none;
+}
+.box-left .attention-content:hover .left-site {
+    transform: translateX(calc(100% + 55px));
+    text-align: left;
+}
+.box-left .attention-content:hover .left-site a {
+    background: #A26F5A;
+    color: white; 
+    cursor: pointer;
+}
+.container .box-left .mid-site {
+    width: 10%;
+    display: block;
+    text-align: center;
+}
+.container .box-left .attention-content .mid-site .dot-btn {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-color: #439587;
+    border-radius: 50%;
+    border: 5px solid #EDF6F4;
+}
+ .box-left .attention-content .mid-site .liner::before,
+ .box-left .attention-content .mid-site .liner::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: #EDF6F4;
+    margin-top: 2px;
+}
+.box-left .attention-content:hover .right-site {
+    transform: translateX(calc(-100% - 55px));
+    text-align: right;
+}
+.left-site, .right-site {
+    transition: all 0.5s  cubic-bezier(.15,.9,.82,.2);
+}
+.container .box-right {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.container .box-right .left-img {
+    background-image: url("https://picsum.photos/200/350");
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    top: 40%;
+    right: 60%;
+    z-index: 2;
+}
+.container .box-right .left-img .blurred-img {
+    position: absolute;
+    width: 90%;
+    height: 93%;
+    background: #051972c2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.container .box-right .left-img .blurred-img h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;    
+}
+.container .box-right .left-img p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 97;
+}
+.container .box-right .right-img {
+    width: 50%;   
+}
+.container .box-right .right-img img {
+    width: 350px;
+    height: 500px;
+}
