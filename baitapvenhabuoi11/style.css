@@ -1,0 +1,317 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: "pizza-font";
+    src: url(./fonts/CHEESEPIZZA.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "fran-font";
+    src: url(./fonts/Francoise_D.otf);
+    font-style: normal;
+    font-weight: 300;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+.header-primary {
+    font-family: "Poppins", sans-serif;
+    display: block;
+    padding: 40px 0;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.logo-wrap {
+    width: 30%;
+    height: 48px;
+    text-align: center;
+    padding-right: 100px;
+}
+.box-category {
+    display: flex;
+    width: 70%;
+    height: 48px;
+    justify-content: space-around;
+    padding-right: 40px;
+    /* text-align: center; */
+}
+.center-navbar {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.center-navbar .nav-item,
+.right-navbar .search-btn-item {
+    list-style: none;
+}
+.center-navbar .nav-item {
+  width: 100px;
+  text-align: center;
+  padding: 8px 0;
+}
+.center-navbar .nav-item a {
+    text-decoration: none;
+    color: #4D4D4D;
+}
+.center-navbar .nav-item:nth-child(1) a {
+  color: #F94F50;
+}
+.center-navbar .nav-item:hover a {
+    color: #F94F50;
+}
+.right-navbar {
+    width: 320px;
+    height: 48px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.04);
+    font-size: 16px;
+    padding: 10px 23px;
+}
+.right-navbar .search-btn-item {
+  padding: auto;
+}
+.search-input .searching-icon {
+  color: #8B8B8B;
+}
+.search-input .searching {
+  width: 200px;
+  font-size: 16px;
+  padding: 2px 3px;
+  border: 0px solid white;
+}
+.search-input .searching:focus {
+  outline: none;
+}
+.search-input .searching:focus::placeholder {
+  display: none;
+}
+.search-input .searching::placeholder {
+  color: #2E2E2E;
+}
+.shopping-cart {
+    position: relative;
+    padding-left: 17px;
+}
+.shopping-cart::before {
+    content: "";
+    width: 2px;
+    height: 27px;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: -2px;
+    right: 26px;
+}
+.shopping-cart::after {
+    content: "2";
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: white;
+    background-color: #F54B4B;
+    position: absolute;
+    top: -28px;
+    right:-30px;
+    text-align: center;
+}
+.header-primary .header-container {
+  display: flex;
+  width: 100%;
+  padding: 80px 0;
+}
+.header-container .left_container_content {
+  width: 50%;
+}
+.left_container_content .header_content {
+  padding-left: 100px;
+}
+.left_container_content .header_content h3 {
+    background: #FDECEC;
+    border-radius: 23px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 0 20px 0;
+}
+.left_container_content .header_content h1 {
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 88px;
+}
+.left_container_content .header_content h1 span {
+  color: #F54748;
+  font-weight: 500;
+}
+.left_container_content .header_content p {
+  font-size: 18px;
+  color: rgb(103, 103, 103);
+  line-height: 30px;
+  margin: 22px 0;
+}
+.left_container_content .end_btn {
+  display: flex;
+  font-size: 20px;
+  margin: 50px 0px 10px 0;
+  align-items: center;
+  /* text-align: center; */
+  /* border: none; */
+}
+.left_container_content .end_btn .btn_grover,
+.left_container_content .end_btn .btn_process_grover {
+  padding: 0 12px;
+}
+/* .left_container_content .end_btn .btn_grover {
+} */
+.left_container_content .end_btn .btn_grover a {
+  text-decoration: none;
+  background: #f86061;
+  color: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  flex: end;
+}
+.left_container_content .end_btn .btn_grover a:hover {
+  color: #f86061;
+  background: white;
+  border: 1px solid #f86061;
+}
+.end_btn .btn_process_grover .button-play {
+  border: none;
+  display: flex;
+  background: white;
+  font-size: 18px;
+  align-items: center;
+}
+.end_btn .btn_process_grover .button-play span img {
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.04);
+  border-radius: 50%;
+}
+.header-container .right_container_content {
+  width: 50%;
+}
+.right_container_content .img_content {
+  padding: 0;
+  margin: 0;
+}
+.right_container_content .img_content img {
+  width: 100%;
+}

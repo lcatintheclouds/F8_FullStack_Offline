@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    /* width: 800px;
+    height: 800px;
+    border: 1px solid red;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    padding: 30px 50px;
+    width: 1000px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.box .item {
+    text-align: center  000098899887776;
+    /* justify-content: end; */
+    
+}
+.box .item img {
+    max-height: 50px;
+    width: auto;
+}
