@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Bài 1</h1>
+    <script>
+      var km = 100;
+      var unitPrice_1 = 15000;
+      var unitPrice_2 = 13500;
+      var unitPrice_3 = 11000;
+      var salePrice = 0.1;
+      var total;
+      document.write(`<h3>Số km đã đi là :${km}km</h3>`);
+      if (km > 0) {
+        if (km <= 1) {
+          total = km * unitPrice_1;
+        } else if (1 < km <= 5) {
+          total = 1 * unitPrice_1 + (km - 1) * unitPrice_2;
+        } else {
+          total = 1 * unitPrice_1 + 4 * unitPrice_2 + (km - 5) * unitPrice_3;
+        }
+        if (km > 120) {
+          total =
+            (1 * unitPrice_1 + 4 * unitPrice_2 + (km - 5) * unitPrice_3) *
+            (1 - salePrice);
+        }
+      } else {
+        document.write(`<i>Số km không hợp lệ!</i>`);
+      }
+      document.write(`<h3>Số tiền cước taxi là: ${total} </h3>`);
+    </script>
+  </body>
+</html>
