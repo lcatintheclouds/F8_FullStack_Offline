@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Bài 1</h1>
+    <script>
+      var getFibonacci = function (n) {
+        if (n === 1) {
+          return [0, 1];
+        } else {
+          var s = getFibonacci(n - 1);
+          s.push(s[s.length - 1] + s[s.length - 2]);
+          return s;
+        }
+      };
+      document.write(getFibonacci(10));
+    </script>
+  </body>
+</html>
