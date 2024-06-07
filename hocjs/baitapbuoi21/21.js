@@ -5,7 +5,7 @@ function minMax() {
   var indexMin = 0;
   var max = array[0];
   var indexMax = 0;
-  for (var i = 1; i < array.length; ++i) {
+  for (var i = 1; i < array.length; i++) {
     if (min > array[i]) {
       min = array[i];
       indexMin = i;
@@ -15,7 +15,6 @@ function minMax() {
       indexMax = i;
     }
   }
-
   console.log("Bài 1:");
   console.log("Cho mảng: ", array);
   console.log("Số nhỏ nhất là: ", min);
@@ -77,3 +76,35 @@ console.log("Sau lọc trùng ta được:", newArr3);
 console.log("------------------------------------------------------------");
 
 // Bài 4: -----------------------------------------------------------
+console.log("Bài 4:");
+var numbers = [5, 1, 9, 8, 10];
+var element = 4;
+console.log("Cho mảng:", numbers);
+function sortArray(arr) {
+  for (var i = 0; i < arr.length - 1; i++) {
+    for (var j = i + 1; j < arr.length; j++) {
+      if (arr[i] > arr[j]) {
+        var temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+}
+sortArray(numbers);
+console.log("Sắp xếp mảng tăng dần:", numbers);
+var newArr4 = [];
+var inserted = false;
+var j = 0;
+for (var i = 0; i < numbers.length; i++) {
+  if (!inserted && element < numbers[i]) {
+    newArr4[j++] = element;
+    inserted = true;
+  }
+  newArr4[j++] = numbers[i];
+}
+if (!inserted) {
+  newArr4[newArr4.length - 1] = element;
+}
+console.log("Element =", element);
+console.log("Mảng sau khi chèn:", newArr4);
