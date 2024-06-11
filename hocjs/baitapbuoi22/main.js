@@ -38,16 +38,20 @@ console.log("Cho mảng:", arr);
 var strings = [];
 var numbers = [];
 var booleans = [];
-arr.forEach(function (item) {
-  item.forEach(function (item_) {
-    if (typeof item_ === "string") {
-      strings.push(item_);
-    } else if (typeof item_ === "number") {
-      numbers.push(item_);
-    } else if (typeof item_ === "boolean") {
-      booleans.push(item_);
+arr.forEach(function (array) {
+  array.forEach(function (item) {
+    if (typeof item === "string") {
+      strings.push(item);
+    } else if (typeof item === "number") {
+      numbers.push(item);
+    } else if (typeof item === "boolean") {
+      booleans.push(item);
     }
   });
 });
 var result = [strings, numbers, booleans];
 console.log("Mảng sau khi tách:", result);
+console.log("------------------------------------------------------");
+
+// Bài 4:
+console.log("Bài 4:");
