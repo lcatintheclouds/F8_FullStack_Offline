@@ -14,18 +14,18 @@ console.log("Bài 2:");
 var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
 var isResult = [];
 console.log("Cho mảng:", arr);
-var flatten = function (arr) {
+var isFlat = function (arr) {
   for (var i = 0; i < arr.length; i++) {
     var item = arr[i];
-    if (Array.isArray(arr[i])) {
-      flatten(item);
+    if (Array.isArray(item)) {
+      isFlat(item);
     } else {
       isResult.push(item);
     }
   }
   return isResult;
 };
-console.log("Mảng sau khi làm phẳng: ", flatten(arr));
+console.log("Mảng sau khi làm phẳng: ", isFlat(arr));
 console.log("------------------------------------------------------");
 
 // Bài 3:
@@ -35,3 +35,19 @@ var arr = [
   ["b", 2, false],
 ];
 console.log("Cho mảng:", arr);
+var strings = [];
+var numbers = [];
+var booleans = [];
+arr.forEach(function (item) {
+  item.forEach(function (item_) {
+    if (typeof item_ === "string") {
+      strings.push(item_);
+    } else if (typeof item_ === "number") {
+      numbers.push(item_);
+    } else if (typeof item_ === "boolean") {
+      booleans.push(item_);
+    }
+  });
+});
+var result = [strings, numbers, booleans];
+console.log("Mảng sau khi tách:", result);
