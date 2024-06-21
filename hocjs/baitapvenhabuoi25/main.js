@@ -49,60 +49,164 @@ console.log("Bài 3:");
 //   {
 //     id: 1,
 //     name: "Chuyên mục 1",
-//     parent: 0,
+//     parentIdId: 0,
 //   },
 //   {
 //     id: 2,
 //     name: "Chuyên mục 2",
-//     parent: 0,
+//     parentIdId: 0,
 //   },
 //   {
 //     id: 3,
 //     name: "Chuyên mục 3",
-//     parent: 0,
+//     parentIdId: 0,
 //   },
 //   {
 //     id: 4,
 //     name: "Chuyên mục 2.1",
-//     parent: 2,
+//     parentIdId: 2,
 //   },
 //   {
 //     id: 5,
 //     name: "Chuyên mục 2.2",
-//     parent: 2,
+//     parentIdId: 2,
 //   },
 //   {
 //     id: 6,
 //     name: "Chuyên mục 2.3",
-//     parent: 2,
+//     parentIdId: 2,
 //   },
 //   {
 //     id: 7,
 //     name: "Chuyên mục 3.1",
-//     parent: 3,
+//     parentIdId: 3,
 //   },
 //   {
 //     id: 8,
 //     name: "Chuyên mục 3.2",
-//     parent: 3,
+//     parentIdId: 3,
 //   },
 //   {
 //     id: 9,
 //     name: "Chuyên mục 3.3",
-//     parent: 3,
+//     parentIdId: 3,
 //   },
 //   {
 //     id: 10,
 //     name: "Chuyên mục 2.2.1",
-//     parent: 5,
+//     parentIdId: 5,
 //   },
 //   {
 //     id: 11,
 //     name: "Chuyên mục 2.2.2",
-//     parent: 5,
+//     parentIdId: 5,
 //   },
 // ];
+// function buildTreeArray(flatArray) {
+//   // Use reduce to create a nodeMap
+//   const nodeMap = flatArray.reduce((acc, item) => {
+//     acc[item.id] = { ...item, children: [] };
+//     return acc;
+//   }, {});
 
+//   // Recursive function to build nodes
+//   const buildNode = (id) => {
+//     const node = nodeMap[id];
+//     if (!node) return null;
+
+//     // Filter flatArray for items with parentIdId === id
+//     node.children = flatArray
+//       .filter((item) => item.parentIdId === id)
+//       .map((item) => buildNode(item.id));
+
+//     return node;
+//   };
+
+//   // Filter flatArray for root nodes
+//   return flatArray
+//     .filter((item) => item.parentIdId === null)
+//     .map((item) => buildNode(item.id));
+// }
+
+// const commentsTree = buildTreeArray(categories);
+// // console.log(commentsTree);
+// console.log(JSON.stringify(commentsTree, null, 2));
+
+const categories = [
+  {
+    id: 1,
+    name: "Chuyên mục 1",
+    parent: 0,
+  },
+  {
+    id: 2,
+    name: "Chuyên mục 2",
+    parent: 0,
+  },
+  {
+    id: 3,
+    name: "Chuyên mục 3",
+    parent: 0,
+  },
+  {
+    id: 4,
+    name: "Chuyên mục 2.1",
+    parent: 2,
+  },
+  {
+    id: 5,
+    name: "Chuyên mục 2.2",
+    parent: 2,
+  },
+  {
+    id: 6,
+    name: "Chuyên mục 2.3",
+    parent: 2,
+  },
+  {
+    id: 7,
+    name: "Chuyên mục 3.1",
+    parent: 3,
+  },
+  {
+    id: 8,
+    name: "Chuyên mục 3.2",
+    parent: 3,
+  },
+  {
+    id: 9,
+    name: "Chuyên mục 3.3",
+    parent: 3,
+  },
+  {
+    id: 10,
+    name: "Chuyên mục 2.2.1",
+    parent: 5,
+  },
+  {
+    id: 11,
+    name: "Chuyên mục 2.2.2",
+    parent: 5,
+  },
+];
+function categoriesNested(category) {
+  const nodeMap = {};
+  const result = [];
+  category.forEach(function (arr) {
+    nodeMap[arr.id] = { ...arr, children: [] };
+  });
+  category.forEach(function (arr) {
+    var node = nodeMap[arr.id];
+    if (arr.parent !== 0) {
+      nodeMap[arr.parent].children.push(node);
+    } else {
+      result.push(node);
+    }
+  });
+  return result;
+}
+const solution = categoriesNested(categories);
+console.log(solution);
 console.log("------------------------------------------------------");
 
 // Bài 4:
