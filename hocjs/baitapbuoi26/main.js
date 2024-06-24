@@ -92,22 +92,4 @@ var categories = [
     ],
   },
 ];
-function categoriesNested(category) {
-  var nodeMap = {};
-  var result = [];
-  category.forEach(function (arr) {
-    nodeMap[arr.id] = { ...arr, children: [] };
-  });
-  category.forEach(function (arr) {
-    var node = nodeMap[arr.id];
-    if (arr.parent !== 0) {
-      nodeMap[arr.parent].children.push(node);
-    } else {
-      result.push(node);
-    }
-  });
-  return result;
-}
-var solution = categoriesNested(categories);
-console.log(solution);
-console.log("------------------------------------------------------"); */
+*/
