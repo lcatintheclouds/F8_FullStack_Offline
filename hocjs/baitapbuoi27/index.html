@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tin tức Việt Nam và quốc tế nóng, nhanh, cập nhật 24h | Báo Dân trí
+    </title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./img/static-avatar-default.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="header container">
+      <div class="container-top">
+        <div class="row">
+          <div class="col-2">
+            <h1 class="logo-container">
+              <a href="#" class="logo">
+                <img
+                  src="./img/static-logo.svg"
+                  alt="Báo điện tử Dân trí - Tin tức cập nhật liên tục 24/7"
+                  class="logo-img"
+                />
+              </a>
+            </h1>
+          </div>
+          <div class="col-4">
+            <div class="weather-content">
+              <div class="weather_info">
+                <span class="weather-city">Hà Nội</span>
+                <span class="weather-date">Thứ 6, 28/06/2024</span>
+              </div>
+              <div class="midle_line"></div>
+              <div class="temperature">
+                <img
+                  src="./img/about_3.svg"
+                  alt="temperature"
+                  class="temperature_icon"
+                />
+                <span>28 °C</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="about">
+              <a href="#" class="about-item line_space"
+                ><img
+                  src="./img/about_1.svg"
+                  alt="Dân sinh"
+                  class="about-img"
+                />
+                Dân sinh</a
+              >
+              <a href="#" class="about-item line_space"
+                ><img src="./img/about_2.jpg" alt="Fica" class="about-img" />
+                Fica</a
+              >
+              <a href="#" class="about-item"
+                ><img
+                  src="./img/static-avatar-default.png"
+                  alt="DTiNews"
+                  class="about-img"
+                />
+                DTiNews</a
+              >
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="account_search">
+              <div class="button_login">
+                <button class="btnlogin" type="button" name="login">
+                  <i class="fa-solid fa-user" id="login_icon"></i>
+                  Đăng nhập
+                </button>
+              </div>
+              <div data-module="account-notification"></div>
+              <div class="button_search">
+                <a href="#">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav role="navigation" class="menu-container">
+        <ol>
+          <li class="home">
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li><a href="#">EURO 2024</a></li>
+          <li><a href="#">VIDEO</a></li>
+          <li><a href="#">KINH DOANH</a></li>
+          <li><a href="#">XÃ HỘI</a></li>
+          <li><a href="#">THẾ GIỚI</a></li>
+          <li><a href="#">GIẢI TRÍ</a></li>
+          <li><a href="#">BẤT ĐỘNG SẢN</a></li>
+          <li><a href="#">THỂ THAO</a></li>
+          <li><a href="#">VIỆC LÀM</a></li>
+          <li><a href="#">NHÂN ÁI</a></li>
+          <li><a href="#">SỨC KHOẺ</a></li>
+          <li><a href="#">XE ++</a></li>
+          <li><a href="#">SỨC MẠNH SỐ</a></li>
+          <li><a href="#">GIÁO DỤC</a></li>
+          <li><a href="#">AN SINH</a></li>
+          <li><a href="#">PHÁP LUẬT</a></li>
+          <li class="menu-more">
+            <img src="./img/more_btn.svg" alt="" />
+            <img src="./img/close_btn.svg" alt="" />
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <div class="form-main">
+      <div class="overlay"></div>
+      <form action="" class="form">
+        <div class="close">
+          <img src="./img/close_btn.svg" alt="" />
+        </div>
+        <div class="logo">
+          <a href="#" target="_blank">
+            <img src="./img/static-logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="login-register">
+          <button class="login" type="button">Đăng nhập</button>
+          <button class="register" type="button">Đăng ký</button>
+        </div>
+
+        <div class="header-login">
+          <span class="result-login"></span>
+          <div class="information-login">
+            <div class="input-information-login">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" placeholder="Email" />
+            </div>
+            <span class="error-email"></span>
+            <div class="input-information-login">
+              <label for="login-password">Mật khẩu</label>
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Mật khẩu"
+              />
+              <i class="bi bi-eye"></i>
+            </div>
+            <span class="error-password"></span>
+            <div class="forget-password">
+              <button class="btn-forget" type="button">Quên mật khẩu?</button>
+            </div>
+          </div>
+          <div class="footer-login">
+            <button class="btn-login" type="button">Đăng nhập</button>
+          </div>
+        </div>
+
+        <div class="header-register">
+          <div class="desc">
+            <p>Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</p>
+          </div>
+          <span class="result-register"></span>
+          <div class="information-login">
+            <div class="input-information-login">
+              <label for="register-name">Họ và tên</label>
+              <input type="email" id="register-name" placeholder="Họ và tên" />
+            </div>
+            <span class="error-name"></span>
+            <div class="input-information-login">
+              <label for="register-email">Email</label>
+              <input type="email" id="register-email" placeholder="Email" />
+            </div>
+            <span class="error-email"></span>
+            <div class="input-information-login">
+              <label for="register-password">Mật khẩu</label>
+              <input
+                type="password"
+                id="register-password"
+                placeholder="Mật khẩu"
+              />
+              <i class="bi bi-eye eyeregister"></i>
+            </div>
+            <span class="error-password"></span>
+          </div>
+          <div class="register-term">
+            <div class="desc">
+              <p>
+                Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
+                <a class="highlight-desc" href="#!">
+                  điều kiện về qui định và chính sách của Dân trí
+                </a>
+              </p>
+            </div>
+            <div class="footer-register">
+              <button class="btn-register" type="button">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

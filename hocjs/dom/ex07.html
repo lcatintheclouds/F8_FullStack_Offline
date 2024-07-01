@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: absolute;
+        inset: 0;
+        display: flex;
+      }
+
+      .left {
+        display: block;
+        width: 50%;
+      }
+      .right {
+        display: block;
+        width: 50%;
+        align-items: end;
+      }
+      .right:active {
+        color: red;
+      }
+      .btn {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Event Object</h1>
+        <button type="button" class="btn">Click me</button>
+      </div>
+      <div class="right active"></div>
+    </div>
+    <script src="./js/ex07.js"></script>
+  </body>
+</html>

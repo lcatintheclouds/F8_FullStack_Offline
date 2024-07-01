@@ -17,9 +17,9 @@ console.log("------------------------------------------------------");
 console.log("Bài 2:");
 Array.prototype.filter2 = function (callbackFn) {
   var newData = [];
-  for (var i = 0; i < this.length; i++) {
-    if (callbackFn(this[i])) {
-      newData.push(this[i]);
+  for (let i = 0; i < this.length; i++) {
+    if (callbackFn(this[i], i, this)) {
+      newData[newData.length] = this[i];
     }
   }
   return newData;
