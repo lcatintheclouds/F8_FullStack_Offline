@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        width: 400px;
+        height: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background: black;
+        color: white;
+        font-size: 20px;
+        margin-top: 100px;
+      }
+      .box .item:hover {
+        background: green;
+      }
+      .box .item:focus {
+        background: green;
+      }
+      /* .menu-child {
+        display: none;
+      } */
+      .has-child {
+        font-size: 20px;
+      }
+      .has-child::after {
+        content: "▼";
+        float: right;
+        font-size: 0.85rem;
+      }
+      .active > ul {
+        background: red;
+        display: block;
+      }
+      .menu_child .itemchild {
+        background: green;
+        height: 0;
+        padding: 0 15px;
+        overflow: hidden;
+        transition: height 0.3s ease;
+      }
+      /* .hidden {
+        display: none;
+      } */
+      .btn {
+        background: transparent;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul class="menu">
+        <li class="item"><span class="menu_title">Menu 1</span></li>
+        <li class="item">
+          <span class="menu_title">Menu 2</span>
+          <!-- <button type="button" class="btn">▼</button> -->
+          <ul class="menu_child hidden">
+            <li class="item_child"><span>Menu 2.1</span></li>
+            <li class="item_child"><span>Menu 2.2</span></li>
+            <li class="item_child"><span>Menu 2.3</span></li>
+          </ul>
+        </li>
+        <li class="item">
+          <span class="menu_title">Menu 3</span>
+          <!-- <button type="button" class="btn">▼</button> -->
+          <ul class="menu_child hidden">
+            <li class="item_child"><span>Menu 3.1</span></li>
+            <li class="item_child"><span>Menu 3.2</span></li>
+            <li class="item_child"><span>Menu 3.3</span></li>
+          </ul>
+        </li>
+        <li class="item"><span class="menu_title">Menu 4</span></li>
+      </ul>
+    </div>
+    <script src="./js/ex10.js"></script>
+  </body>
+</html>
