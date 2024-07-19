@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .nav {
+        background: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        z-index: 10;
+      }
+      .nav-item {
+        padding: 5px;
+        margin-right: 2px;
+        cursor: pointer;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        background: white;
+      }
+      .nav-item.active {
+        color: red;
+      }
+      .nav-item:hover {
+        color: red;
+      }
+      .content {
+        position: relative;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <button data-target="section-1" class="nav-item">Section 1</button>
+      <button data-target="section-2" class="nav-item">Section 2</button>
+      <button data-target="section-3" class="nav-item">Section 3</button>
+    </nav>
+    <div class="content" id="section-1">
+      <h2>Section 1</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quia,
+        quidem quidem, quod quod, quidem quidem quod quod.
+      </p>
+    </div>
+    <div class="content" id="section-2">
+      <h2>Section 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quia,
+        quidem quidem, quod quod, quidem quidem quod quod.
+      </p>
+    </div>
+    <div class="content" id="section-3">
+      <h2>Section 3</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quia,
+        quidem quidem, quod quod, quidem quidem quod quod.
+      </p>
+    </div>
+    <script src="./js/ex17.js"></script>
+  </body>
+</html>

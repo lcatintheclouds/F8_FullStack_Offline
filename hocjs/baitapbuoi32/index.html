@@ -28,11 +28,17 @@
         </div>
         <span>00:00</span>
       </div>
-      <div class="karaoke">
-        <button class="btn-karaoke">Hát Karaoke</button>
+      <button class="btn-Karaoke" onclick="clickKaraoke()">Hát Karaoke</button>
+      <div class="lyric">
+        <div class="title">
+          <h1>Karaoke</h1>
+          <i class="fa-solid fa-chevron-down" onclick="backKaraoke()"></i>
+        </div>
+        <div class="text-karaoke"></div>
       </div>
       <audio src="./music/perfect-night.mp3"></audio>
     </div>
+    <script src="./music/lyric.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
