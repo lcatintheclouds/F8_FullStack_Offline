@@ -33,7 +33,7 @@ progressBar.addEventListener("mouseleave", function () {
   timePreview.style.display = "none";
 });
 span.addEventListener("mousedown", function (e) {
-  e.stopPropagation();
+  e.stopPropagation();``
   document.addEventListener("mousemove", handleDrag);
   initialClientX = e.clientX;
 });

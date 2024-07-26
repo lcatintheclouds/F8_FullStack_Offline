@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Doc Editor</h1>
+      <hr />
+      <nav class="menu">
+        <div class="left-controls">
+          <button class="dropdown-btn">File</button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item">New</button>
+            <button class="dropdown-item">Save as TXT</button>
+            <button class="dropdown-item">Save as PDF</button>
+          </div>
+          <input type="text" class="filename-input" value="Untitled" />
+        </div>
+        <div class="right-controls">
+          <button class="bold-btn">b</button>
+          <button class="italic-btn">i</button>
+          <button class="underline-btn">u</button>
+          <input type="color" class="color-picker" />
+        </div>
+      </nav>
+    </header>
+    <div class="text-editor"></div>
+    <div class="footer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
