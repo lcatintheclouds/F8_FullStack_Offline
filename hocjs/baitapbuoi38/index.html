@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen-add-todos">
+        <div class="overplay"></div>
+        <form class="add-todo-main">
+          <div>
+            <input type="text" class="add-todo-input" placeholder="Add Todos" />
+          </div>
+          <hr />
+          <div class="button-mainscreen">
+            <button type="button" class="save-btn">Save</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+          </div>
+        </form>
+      </div>
+      <div class="content">
+        <h1 class="title"><span class="title-color">Smatyx</span> Todos App</h1>
+        <div class="action-todo-app">
+          <div class="searching-action">
+            <input
+              type="text"
+              class="searching-input"
+              placeholder="Search Todos"
+            />
+            <button type="button" class="searching-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <button class="btn-add-todo" type="button">Add Todos</button>
+        </div>
+        <div class="todo-app"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
