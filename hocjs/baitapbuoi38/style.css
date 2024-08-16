@@ -155,3 +155,55 @@ body {
   color: #fff;
   margin-left: 10px;
 }
+.container .content .todo-app .todo-list-item {
+  width: auto;
+  min-width: 741px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 24px;
+  background: white;
+  box-shadow: 9px 12px 8px -5px rgba(183, 177, 177, 0.66);
+  -webkit-box-shadow: 9px 12px 8px -5px rgba(183, 177, 177, 0.66);
+  -moz-box-shadow: 9px 12px 8px -5px rgba(183, 177, 177, 0.66);
+}
+.container .content .todo-app .todo-list-item .todo-action-item .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  background-color: #9ca3af;
+  color: #fff;
+  margin-left: 10px;
+}
+.container .content .todo-app .todo-list-item .todo-action-item .delete-btn {
+  background: #be123c;
+}
+.container .content .todo-app .todo-list-item .todo-action-item .edit-btn {
+  background: #1d4ed8;
+}
+/* .container .content .todo-app .todo-list-item .todo-action-item .complete-btn {
+  background: #047857;
+} */
+.container .content .complete-todo .clear-btn {
+  width: 200px;
+  height: 50px;
+  margin: 10px 0 0;
+  padding: 10px 16px;
+  background: #9ca3af;
+  border-radius: 10px;
+  border: 1px solid #9ca3af7d;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}

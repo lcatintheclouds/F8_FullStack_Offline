@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="image/image.png" />
+    <title>Smatyx Todos</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -19,7 +20,12 @@
         <div class="overplay"></div>
         <form class="add-todo-main">
           <div>
-            <input type="text" class="add-todo-input" placeholder="Add Todos" />
+            <input
+              type="text"
+              class="add-todo-input"
+              placeholder="Add Todos"
+              required
+            />
           </div>
           <hr />
           <div class="button-mainscreen">
@@ -44,8 +50,10 @@
           <button class="btn-add-todo" type="button">Add Todos</button>
         </div>
         <div class="todo-app"></div>
+        <div class="complete-todo"></div>
       </div>
     </div>
+    <script src="fetch-api.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
